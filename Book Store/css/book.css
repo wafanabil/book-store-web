@@ -1,0 +1,141 @@
+.body {
+    display: grid;
+    grid-template-columns: 15% 85%;
+}
+
+.sidebar {
+    background-color: white;
+    padding: 3rem 0;
+}
+
+/*  */ /*  */ /*  */ /*  */
+/* main */
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-between;
+    align-content: center;
+    width: 90%;
+    margin: 0 auto;
+    padding: 3rem 0;
+    transition: 2s;
+}
+
+.grid-item {
+    margin-bottom: 2rem;
+}
+
+.book-img {
+    height: 260px;
+}
+
+.grid-item p, .grid-item div{
+    padding: .2rem 0;
+}
+
+.grid-item img{
+    margin: 0 .3rem;
+}
+
+.grid-item .p {
+    font-weight: bold;
+}
+
+.red-heart, .empty-heart {
+    display: none;
+    transition: 1s;
+}
+
+.red-heart.active, .empty-heart.active {
+    display: inline;
+    transition: 1s;
+}
+
+.grid-item .card-but {
+    padding: 0.6rem 1rem;
+    border-radius: 2rem;
+    font-family: 'Rubik', sans-serif;
+    cursor: pointer;
+    color: white;
+    background: linear-gradient(90deg, rgba(107, 188, 215, 1) 0%, rgba(107, 76, 230, 1) 100%);
+    transition: all 300ms ease;
+    border: none;
+}
+
+
+/*  */ /*  */ /*  */ /*  */
+/* sidebar */
+
+.sidebar ul li h2, .sidebar ul li h3 {
+    color: #6b4ce6;
+}
+
+.sidebar ul li h3 {
+    display: none;
+}
+
+.sidebar ul li {
+    padding: .4rem 0;
+}
+
+.sidebar ul li a, .page ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.sidebar ul .active a{
+    color: #6b4ce6;
+}
+
+.sidebar ul li a:hover {
+    color: #6b4ce6;
+}
+
+
+
+@media(max-width: 1025px){
+    .grid-container {
+        grid-template-columns: auto auto auto;
+    }
+
+    .body {
+        grid-template-columns: 20% 80%;
+    }
+}
+
+@media(max-width: 800px){
+    .grid-container {
+        grid-template-columns: auto auto;
+    }
+
+    .body {
+        grid-template-columns: 25% 75%;
+    }
+}
+
+@media(max-width: 590px){
+    .grid-container {
+        grid-template-columns: auto;
+        justify-content: center;
+    }
+
+    .body {
+        grid-template-columns: 30% 70%;
+    }
+}
+
+@media(max-width: 380px){
+    .body {
+        grid-template-columns: 33% 67%;
+    }
+
+    .sidebar ul li h2 {
+        display: none;
+    }
+
+    .sidebar ul li h3 {
+        display: block;
+    }
+}
+
+

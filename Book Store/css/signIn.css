@@ -1,0 +1,168 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Rubik', sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: rgb(251, 245, 254);
+}
+
+.container {
+    display: flex;
+}
+
+.right-side {
+    position: relative;
+    width: 50vw;
+}
+
+.signIn {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    text-align: center;
+}
+
+.signIn h3{
+    padding: 1rem;
+    border-radius: 0 20px 20px 0;
+}
+
+.signIn a{
+    text-decoration: none;
+    color: black;
+}
+
+.signIn h3.active{
+    background-color: rgb(251, 245, 254);
+}
+
+/*  *//*  *//*  *//*  *//*  */
+/* left side */
+.left-side {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3rem 0;
+}
+
+/*  *//*  *//*  *//*  *//*  */
+.logo img {
+    height: 220px;
+    margin-bottom: 1.5rem;
+}
+
+/* .logo h1 {
+    color: #8b1f9b;
+} */
+
+/*  *//*  *//*  *//*  *//*  */
+.left-side .input {
+    width: 55%;
+    margin: 0 auto;
+}
+
+.input ul{
+    list-style: none;
+    text-align: right;
+}
+
+.input li input{
+    background-color: transparent;
+    border: none;
+    height: 2rem;
+    width: 80%;
+    margin: .5rem;
+    cursor: pointer;
+}
+
+.input li img{
+    vertical-align: middle;
+}
+
+.div{
+    display: none;
+}
+
+/* .input a {
+    text-decoration: none;
+    color: #8b1f9b;
+    text-align: right;
+    margin-top: 1.5rem;
+}
+
+.input a p {
+    margin-top: 1rem;
+} */
+
+/*  *//*  *//*  *//*  *//*  */
+/* forget */
+.forget  {
+    width: 55%;
+}
+
+.forget button {
+    width: 100%;
+    color: white;
+    border-radius: 2rem;
+    border: none;
+    font-family: 'Rubik', sans-serif;
+    cursor: pointer;
+    background: linear-gradient(90deg, rgba(107, 188, 215, 1) 0%, rgba(107, 76, 230, 1) 100%);
+    padding: 0.6rem 1.5rem;
+    font-size: 18px;
+}
+
+@media (max-width: 650px) {
+    .input li input{
+        width: 75%;
+    }
+}
+
+@media (max-width: 530px) {
+    .input li input{
+        width: 70%;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .container {
+        display: flex;
+        height: 738.7px;
+    }
+
+    .right-side{
+        display: none;
+    }
+
+    .div{
+        display: flex;
+        justify-content: center;
+        background-image: url(/img/back-ground/Wallpapers.jpg);
+        padding: 1.5rem;
+        width: 100%;
+    }
+
+    .div a {
+        padding: 0.6rem 1.5rem;
+        font-size: 18px;
+        color: black;
+        text-decoration: none;
+    }
+
+    .div a.active {
+        background-color: white;
+        border-radius: 20px;
+    }
+}
+
+

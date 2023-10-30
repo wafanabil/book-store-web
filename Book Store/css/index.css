@@ -1,0 +1,299 @@
+button {
+    border: none;
+}
+
+/*  */ /*  */ /*  */ /*  */
+/* section1 */
+.section-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    margin: 2rem 10rem;
+}
+
+.section{
+    background: linear-gradient(to top, #6bbcd7, #6b4ce6);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.section-1 h1 {
+    margin-left: 6rem;
+    transition: .5s;
+    
+}
+
+.section-1 h4, .section-1 h3, .section-1 h2 {
+    display: none;
+    transition: 1s;
+}
+
+.section-1 img {
+    height: 440px;
+    transition: 1s;
+}
+
+/*  */ /*  */ /*  */ /*  */
+/* text gradint */
+/* الكود فيه مشطلة عشان كدا خفيتو لازم ادور كود غيره */
+/* .section {
+    background: -webkit-linear-gradient(90deg, rgba(107, 188, 215, 1) 0%, rgba(107, 76, 230, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+} */
+
+/*  */ /*  */ /*  */ /*  */
+/* most sealing book */
+.grid-container {
+    width: 95%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.book-img {
+    height: 300px;
+    width: 200px;
+}
+
+.grid-item p, .grid-item div {
+    margin: .5rem 0;
+}
+
+.grid-item .p {
+    font-weight: bold;
+}
+
+.hr {
+    width: 60%;
+    height: 2px;
+    text-align: center;
+    margin: 0 auto;
+    background: linear-gradient(90deg, rgba(107, 188, 215, 1) 0%, rgba(107, 76, 230, 1) 100%);
+}
+
+.grid-item img {
+    margin: 0 .3rem;
+}
+
+.red-heart, .empty-heart {
+    display: none;
+    transition: 1s;
+}
+
+.red-heart.active, .empty-heart.active {
+    display: inline;
+    transition: 1s;
+}
+
+/*  */ /*  */ /*  */ /*  */
+/* button */
+.grid-item .card-but {
+    padding: 0.6rem 1rem;
+    border-radius: 2rem;
+    font-family: 'Rubik', sans-serif;
+    cursor: pointer;
+    color: white;
+    background: linear-gradient(90deg, rgba(107, 188, 215, 1) 0%, rgba(107, 76, 230, 1) 100%);
+    transition: all 300ms ease;
+    margin-bottom: 1rem;
+}
+
+/* user review */
+
+.card-con {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.card {
+    position: relative;
+    background-color: #FFF;
+    width: 22rem;
+    height: 15rem;
+    padding: 1rem;
+    border-radius: 2rem;
+    margin: 1rem 0.5rem;
+    box-shadow: 10px 10px 8px gray;
+}
+
+.card h2 {
+    color: #6b4ce6;
+    margin-top: .5rem;
+    margin-bottom: 1rem;
+}
+
+.card p{
+    align-items: center;
+}
+
+.user {
+    position: absolute;
+    left: .8rem;
+    top: .5rem;
+    height: 55px;
+}
+
+.like {
+    position: absolute;
+    right: 1.8rem;
+    bottom: .8rem;
+}
+
+.dislike {
+    position: absolute;
+    right: 4rem;
+    bottom: .8rem;
+}
+
+.star{
+    position: absolute;
+    left: 2rem;
+    bottom: .8rem;
+}
+
+.hr {
+    width: 60%;
+    height: 2px;
+    text-align: center;
+    margin: 0 auto;
+    background: linear-gradient(90deg, rgba(107, 188, 215, 1) 0%, rgba(107, 76, 230, 1) 100%);
+}
+
+/*  */
+/* common-questions*/
+.common-questions{
+    width: 60%;
+    margin: 0 auto;
+    text-align: right;
+}
+
+.common-questions span h3{
+    display: inline;
+    padding-right: .5rem;
+}
+
+.common-questions hr{
+    margin: .6rem 0;
+}
+
+.common-questions p{
+    display: none;
+}
+
+.common-questions .active{
+    display: block;
+    transition: 1s;
+}
+
+.plus, .cross{
+    display: none;
+}
+
+.plus.active, .cross.active{
+    transition-timing-function: ease-in;
+    display: inline;
+}
+
+@media(max-width: 1080px) {
+    .section-1 {
+        margin: 2rem 5rem;
+    }
+
+    .section-1 img {
+        height: 350px;
+    }
+}
+
+@media(max-width: 930px) {
+    .grid-container {
+        grid-template-columns: auto auto;
+    }
+
+    .grid-item .cart-but {
+        margin-bottom: 1rem;
+    }
+}
+
+@media(max-width: 830px) {
+    .section-1 {
+        margin: 2rem 5rem;
+    }
+
+    .section-1 h1 {
+        margin-left: 4rem;
+    }
+
+    .section-1 img {
+        height: 250px;
+    }
+}
+
+@media(max-width: 650px) {
+    .section-1 {
+        margin: 2rem 3rem;
+    }
+
+    .section-1 h1 {
+        display: none;
+    }
+
+    .section-1 h2 {
+        display: block;
+        margin-left: 2rem;
+    }
+
+    .section-1 img {
+        height: 200px;
+    }
+}
+
+@media(max-width: 500px) {
+    .grid-container {
+        margin: 0 auto;
+        grid-template-columns: auto;
+    }
+
+    .section-1 h2 {
+        display: none;
+    }
+
+    .section-1 h3 {
+        display: block;
+        margin-left: 1.6rem;
+    }
+
+    .section-1 img {
+        height: 170px;
+    }
+}
+
+
+@media(max-width: 400px) {
+    .section-1 {
+        margin: 2rem 2rem;
+    }
+
+    .section-1 h3 {
+        display: none;
+    }
+
+    /* .section-1 h3 {
+        display: block;
+        margin-left: .6rem;
+    } */
+
+    .section-1 h4 {
+        display: block;
+        margin-left: 1.6rem;
+    }
+
+    .section-1 img {
+        height: 130px;
+    }
+}

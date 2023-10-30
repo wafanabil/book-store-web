@@ -1,0 +1,293 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Rubik', sans-serif;
+}
+
+body {
+    background-color: rgb(251, 245, 254);
+    text-align: center;
+}
+
+nav {
+    background-color: #FFF;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+
+}
+
+.navbar, .navbar-2 {
+    background-color: #FFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    margin: 0 auto;
+    padding: .6rem 0;
+}
+
+.navbar-2, .navbar-3, .div {
+    display: none;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+/* change the size of tap p in the navbar */
+nav p {
+    font-size: 20px;
+    color: black;
+}
+
+/*  */ /*  */ /*  */ 
+/* right side of navbar */
+.link{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title , .link a{
+    margin-right: 0.4rem;
+    margin-left: 0.4rem;
+}
+
+/*  */ /*  */ /*  */
+/* search bar */
+.search-bar, .search-bar-2 {
+    background-color: hsl(252, 30%, 95%);
+    border-radius: 2rem;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    cursor: pointer;
+    text-align: right;
+    /* transition: 2s; */
+}
+
+.search, .search-2 {
+    background-color: transparent;
+    border: none;
+    font-size: 1rem;
+    margin-right: .3rem;
+    color: hsl(252, 30%, 17%);
+    width: 30vw;
+    transition: .5s;
+}
+
+/*  */ /*  */ /*  */
+/* navbar list */
+.navbar ul, .navbar-2 ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar li, .navbar-2 li {
+    margin: 0 .8rem;
+}
+
+.navbar li a p, .navbar-2 li a p {
+    color: #6b4ce6;
+}
+
+.btn, .btn-2{
+    background-color: #6b4ce6;
+    padding: 0.6rem 2rem;
+    border-radius: 2rem;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/*  */ /*  */ /*  */
+/* toogle */
+.toggle-button {
+    position: absolute;
+    top: 1.2rem;
+    right: 1.5rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 32px;
+    height: 22px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: #6b4ce6;
+    border-radius: 10px;
+}
+
+/*  */ /*  */ /*  */
+/* footer */
+.footer {
+    background-color: #FFF;
+}
+
+.footer-container {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: space-around;
+    align-content: center;
+    padding: 2rem 0;
+}
+
+.footer-container div{
+    margin-bottom: 1.5rem;
+}
+
+.footer-container hr {
+    display: none;
+}
+
+.store-info {
+    text-align: right;
+}
+
+.store-info h2, .contact-us {
+    color: #6b4ce6;
+    margin-bottom: .6rem;
+}
+
+.contact-us-img {
+    padding-top: 1.5rem;
+}
+
+.contact-us-img img {
+    opacity: .6;
+    padding-left: .2rem;
+    padding-right: .2rem;
+}
+
+.contact-us-img img:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+/* media */
+/* change the navbar */
+@media(max-width: 1165px) {
+    .search {
+        width: 25vw;
+    }
+
+    .navbar li {
+        margin: 0 .4rem;
+    }
+}
+
+/* change the navbar */
+@media(max-width: 1010px) {
+    .search {
+        width: 20vw;
+    }
+}
+
+/* change the navbar */
+@media(max-width: 940px) {
+    .search {
+        width: 15vw;
+    }
+
+    .btn {
+        padding: 0.6rem 1rem;
+    }
+}
+
+/* secound navbar */
+@media(max-width: 850px) {
+    .navbar-2 {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .div {
+        display: block;
+    }
+
+    .search-bar {
+        display: none;
+    }
+
+    .search-bar-2{
+        width: 60%;
+    }
+
+    .search-2 {
+        width: 93%;
+    }
+
+    .navbar li {
+        margin: 0 .5rem;
+    }
+
+    .title , .link a{
+        margin-right: 0.4rem;
+        margin-left: 0.4rem;
+    }
+
+    .btn {
+        padding: 0.6rem 1rem;
+    }
+}
+
+
+/* media for footer */
+@media(max-width: 650px) {
+    .footer-container {
+        grid-template-columns: 100%;
+        margin: 0 auto;
+    }
+
+    .footer-container hr{
+        display: block;
+        margin: 1rem auto;
+        width: 70%;
+    }
+}
+
+/* thied navbaar */
+@media(max-width: 730px) {
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar {
+        justify-content: center;
+    }
+
+    .link a, .navbar ul, .navbar-2, .div {
+        display: none;
+    }
+
+    .search-bar-2{
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .search-2 {
+        width: 80%;
+    }
+
+    .navbar-3.active{
+        display: block;
+    }
+
+    .navbar-3 ul {
+        padding: 1rem 0;
+    }
+
+    .navbar-3 li {
+        margin: .6rem 0;
+    }
+}

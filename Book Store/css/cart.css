@@ -1,0 +1,206 @@
+button {
+    border: none;
+}
+
+.h1 {
+    text-align: right;
+    margin: 4rem auto .5rem auto;
+    width: 60%;
+    /* padding-right: 2rem; */
+    text-align: center;
+
+    /* Set the background color */
+    /* background: linear-gradient(rgba(107, 188, 215, 1) 0%, rgba(107, 76, 230, 1) 100%); */
+    /* Mask the color to the text, and remove the rest  */
+    /* background-clip: text;
+    -webkit-background-clip: text; */
+    /* Make the text fill color value transparent so the masked background color comes through */
+    /* color: transparent; */
+
+    background: linear-gradient(to top, #6bbcd7, #6b4ce6);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.hr {
+    width: 30%;
+    height: 2px;
+    text-align: center;
+    margin: 0 auto;
+    background: linear-gradient(90deg, rgba(107, 188, 215, 1) 0%, rgba(107, 76, 230, 1) 100%);
+    transition: 1s;
+}
+
+.cart-continar {
+    background-color: white;
+    width: 60%;
+    margin: 1rem auto 8rem auto;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 10px 10px 8px gray;
+    transition: 2s;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
+}
+
+.right-side,
+.left-side {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.right-side img {
+    height: 100px;
+    border: 1px solid black;
+    margin-left: 1rem;
+}
+
+.left-side p {
+    margin-bottom: 1rem;
+}
+
+.left-side .trash-continar {
+    margin-right: 1.5rem;
+}
+
+/* .left-side .num {
+    width: 2.5rem;
+    height: 1.5rem;
+} */
+
+.num ul{
+    list-style: none;
+    display: flex;
+}
+
+.num ul li{
+    background-color: white;
+    border: .5px solid black;
+    padding: .3rem;
+}
+
+.num ul .per{
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.num ul .next{
+    border-radius: 5px 0 0 5px;
+    cursor: pointer;
+}
+
+/*  */
+/*  */
+/*  */
+/*  */
+/* discount code */
+
+.code,
+.pay {
+    text-align: right;
+    margin: 1rem;
+}
+
+.code div {
+    margin: 1rem 0
+}
+
+.code input {
+    padding: .5rem;
+    /* width: 15rem;  */
+    border-radius: 15px;
+    border: none;
+    background-color: hsl(252, 30%, 95%);
+    font-family: 'Rubik', sans-serif;
+}
+
+.code button,
+.pay .but-con button {
+    padding: .5rem 1.4rem;
+    border-radius: 15px;
+    background: linear-gradient(90deg, rgba(107, 188, 215, 1) 0%, rgba(107, 76, 230, 1) 100%);
+    transition: all 300ms ease;
+    font-weight: bold;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+}
+
+/*  */
+/*  */
+/*  */
+/*  */
+/* pay */
+
+.pay div {
+    margin: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pay .but-con {
+    margin: 1rem 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* media */
+@media(max-width: 940px) {
+
+    .cart-continar,
+    .h1 {
+        width: 65%;
+    }
+}
+
+@media(max-width: 940px) {
+
+    .code button,
+    .code input {
+        margin-bottom: .5rem;
+    }
+
+    .cart-continar,
+    .h1 {
+        width: 70%;
+    }
+}
+
+@media(max-width: 870px) {
+
+    .cart-continar,
+    .h1 {
+        width: 75%;
+    }
+}
+
+@media(max-width: 650px) {
+    .h1 {
+        width: 100%;
+    }
+
+    .item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .left-side {
+        justify-content: right;
+        margin-top: 1.5rem;
+    }
+}
+
+@media(max-width: 300px) {
+    .hr {
+        width: 45%;
+    }
+}
+

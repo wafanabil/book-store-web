@@ -1,0 +1,95 @@
+button{
+    border: none;
+}
+
+.h1 {
+    margin: 4rem auto .5rem auto; 
+    display: inline-block;
+    background: linear-gradient(to top, #6bbcd7, #6b4ce6);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.hr {
+    width: 30%;
+    height: 2px;
+    text-align: center;
+    margin: 0 auto;
+    background: linear-gradient(90deg, rgba(107, 188, 215, 1) 0%, rgba(107, 76, 230, 1) 100%);
+    transition: 1s;
+}
+
+.favorite-continar {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-around;
+    align-content: center;
+    margin: 2rem auto;
+    padding: 1rem 2rem;
+}
+
+.favorite-item {
+    background-color: white;
+    padding: 1rem 1.5rem;
+    box-shadow: 10px 10px 8px gray;
+    margin-bottom: 2.5rem;
+}
+
+.book-img {
+    height: 200px;
+}
+
+.favorite-item p, .favorite-item div {
+    margin: .8rem 0;
+}
+
+/* color of book prise */
+.favorite-item .p {
+    font-weight: bold;
+}
+
+.favorite-item div img {
+    margin: 0 .2rem;
+    height: 24px;
+}
+
+/*  */ /*  */ /*  */ /*  */
+/* heart img */
+.red-heart, .empty-heart {
+    display: none;
+    transition: 1s;
+}
+
+.red-heart.active, .empty-heart.active {
+    display: inline;
+    transition: 1s;
+}
+
+/*  */
+/* thied navbaar */
+@media(max-width: 1035px) {
+    .favorite-continar {
+        grid-template-columns: auto auto auto;
+        padding: 1rem 2rem;
+    }
+}
+
+@media(max-width: 815px) {
+    .favorite-continar {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media(max-width: 570px) {
+    .favorite-continar {
+        grid-template-columns: auto;
+    }
+}
+
+@media(max-width: 390px) {
+    .hr {
+        width: 43%;
+    }
+}
+
